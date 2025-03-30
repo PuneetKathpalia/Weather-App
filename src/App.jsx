@@ -52,17 +52,28 @@ const App = () => {
       {weather && <WeatherCard weather={weather} />}
       {forecast && <ForecastCard forecast={forecast} />}
       
-
-
-
-
-
-
-
-
-
-
-
+      <footer className="footer mt-8 text-center text-gray-600 dark:text-gray-400 text-sm">
+  <p>Weather data provided by OpenWeatherMap</p>
+  <div className="flex justify-center [&>*:not(:last-child)]:mr-10 mt-2">
+    <a 
+      href="https://linkedin.com/in/puneetkathpalia" 
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+    >
+      LinkedIn
+    </a>
+    <a
+      href="https://github.com/puneetkathpalia"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+    >
+      GitHub
+    </a>
+  </div>
+  <p className="mt-2">Created by Puneet</p>
+</footer>
     </div>
   );
 };
